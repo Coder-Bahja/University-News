@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University News</title>
+    <style>
+        /* CSS Styles */
+        body {
+            background-color: #972d42;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            padding: 10px;
+            background: #635555;
+            display: flex;
+            justify-content: space-between; /* Aligns logo to the left and nav to the right */
+            align-items: center;
+        }
+        header{
+            text-align: center;
+            color: aqua;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            color: aqua;
+            display: inline-block;
+            padding-right: 50px; /* Add space to the right of the nav */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        a:hover{
+            color: rgb(223, 131, 10);
+            border-radius: 5px;
+            background-color: blue;
+        }
+        nav:active{
+            background: rgb(162, 51, 101);
+            border: red 1px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section h3{
+            color: rgb(4, 3, 77);
+            border-radius: 5px;
+        }
+        section h2 {
+            text-align: center;
+            color: #109c14;
+            background-color: #c6c3e9;
+            padding: 10px;
+            margin-top: 0;
+            border-radius: 5px;
+        }
+        /* styling table data */
+        table, th,td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+        }
+        table{
+            background-color: #c6c3e9;
+        }
+        section img {
+            max-width: 100%;
+            border-radius: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Specific Section Styles */
+        #events {
+            background-color: #f5f5f5;
+        }
+        #news {
+            background-color: #e5f5e5;
+        }
+        #commentary {
+            background-color: #f5e5e5;
+        }
+        #trending{
+            background-color: rgb(201, 243, 243);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1 class="logo"><img src="./logo1-removebg-preview.png" width="50px" alt="">University News Blog</h1>
+        </header>
+        <nav>
+            <a href="#news">News</a>
+            <a href="#events">Events</a>
+            <a href="#commentary">Commentary</a>
+            <a href="#trending">Trending News</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <section id="events">
+            <h2>Events</h2>
+            <article>
+                <h3> University Football League</h3>
+                <img src="images (1).jpeg" alt="Football Championship" height="300" width="500">
+                <p>The pepsi university football League resumes this weekend with Victoria University taking on YMCA, venue YMCA grounds. Don't miss the action!</p>
+                <table border="1" cellspaning="colapse">
+                    
+                        <tr style="background-color: blue;"><td>Group. B</td>
+                        <td>Gp</td>
+                        <td>W</td>
+                        <td>D</td>
+                        <td>L</td>
+                        <td>Pt</td></tr>
+                    
+                    <tr><td style="background-color: #109c14;">Makere university</td><td>6</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>13</td>
+                    </tr>
+                    <tr><td style="background-color: #109c14;">IUIU</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>12</td></tr>
+                    <tr><td style="background-color: red;">Victoria university</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td></tr>
+                    <tr><td style="background-color: red;">YMCA</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>4</td></tr>
+                    <caption>As it stands</caption>
+                </table>
+            </article>
+            <article>
+                <h3>Elections for Student Council</h3>
+                <img src="./Election.jpg" alt="Student Council Elections">
+                <p>Get ready to cast your vote in the upcoming elections for the student council. Make your voice heard!</p>
+            </article>
+        </section>
+        <section id="trending">
+            <h2>Trending Now</h2>
+            <article>
+                <h3>VU decides</h3>
+                <img src="elections-img-4.b36733e0.jpg" alt="vu elections" width="500" height="300">
+                <p> <mark>Gatoya Victoria</mark> emerges as VU`s speaker 
+                    after collecting a total 4500 votes more
+                    than <mark>Ssemanda Nasser</mark>`s votes.
+                    total votes were 6700.
+
+                </p>
+            </article>
+        </section>
+        <section id="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Revolution in Online Tuition Payments</h3>
+                <img src="Mobile+and+Online+payments.jpg" alt="Online Tuition Payments" width="500" height="300">
+                <p>The university introduces a new online tuition payment system, making it easier for students to manage their fees.</p>
+            </article>
+        </section>
+        <section id="commentary">
+            <h2>Commentary</h2>
+            <article>
+                <h3>Reflections on Campus Life</h3>
+                <p>As the semester comes to a close, it's a good time to reflect on the experiences and lessons learned throughout the year.</p>
+            </article>
+        </section>
+    </main>
+    <marquee behavior="" direction=""><b><mark>Welcome to  University News Blog, your home of daily university news.</marquee>
+    <footer>
+        <p>&copy; 2024 University News. All rights reserved.</p>
+        <figcaption>Powered by Victoria university</figcaption>
+        
+    </footer>
+    
+</body>
+</html>
